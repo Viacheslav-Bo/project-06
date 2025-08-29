@@ -1,0 +1,179 @@
+/*Base styles*/
+:root {
+    --font-family: 'Quicksand', sans-serif;
+    --second-family: 'Aboreto', sans-serif;
+
+    --color-white: #fff;
+    --color-coffee-lightest: #eadfd6;
+    --color-coffee-lighter: #e0cbb4;
+    --color-coffee-light: #c29d84;
+    --color-coffee: #b58869;
+    --color-coffee-dark: #6f4e37;
+    --color-coffee-darker: #60432f;
+    --color-coffee-darkest: #443022;
+    --color-error-red: #7f1c1c;
+    --color-neutral-darkest: #0b0803;
+    --color-neutral-lighter: #dad9d9;
+    --color-neutral-lightest: #f2f2f2;
+    --color-neutral-light: #b5b4b3;
+    --color-neutral: #858381;
+    --color-neutral-dark: #54524e;
+    --color-neutral-darker: #23201c;
+
+    --opacity-transparent: rgba(255, 255, 255, 0);
+    --opacity-white-5: rgba(255, 255, 255, 0.05);
+    --opacity-white-10: rgba(255, 255, 255, 0.1);
+    --opacity-white-15: rgba(255, 255, 255, 0.15);
+    --opacity-white-20: rgba(255, 255, 255, 0.2);
+    --opacity-white-30: rgba(255, 255, 255, 0.3);
+    --opacity-white-40: rgba(255, 255, 255, 0.4);
+    --opacity-white-50: rgba(255, 255, 255, 0.5);
+    --opacity-white-60: rgba(255, 255, 255, 0.6);
+    --opacity-neutral-darkest-5: rgba(11, 8, 3, 0.05);
+    --opacity-neutral-darkest-10: rgba(11, 8, 3, 0.1);
+    --opacity-neutral-darkest-15: rgba(11, 8, 3, 0.15);
+    --opacity-neutral-darkest-20: rgba(11, 8, 3, 0.2);
+    --opacity-neutral-darkest-30: rgba(11, 8, 3, 0.3);
+    --opacity-neutral-darkest-40: rgba(11, 8, 3, 0.4);
+    --opacity-neutral-darkest-50: rgba(11, 8, 3, 0.5);
+    --opacity-neutral-darkest-60: rgba(11, 8, 3, 0.6);
+
+    --color-scheme-1-background: var(--color-coffee-lighter);
+    --color-scheme-1-border: var(--opacity-neutral-darkest-15);
+    --color-scheme-1-text: var(--color-neutral-darkest);
+    --color-scheme-1-foreground: var(--color-coffee-light);
+    --color-scheme-1-accent: var(--color-neutral-darkest);
+
+    --color-scheme-2-background: var(--color-coffee);
+    --color-scheme-2-border: var(--opacity-neutral-darkest-15);
+    --color-scheme-2-text: var(--color-neutral-darkest);
+    --color-scheme-2-foreground: var(--color-coffee);
+    --color-scheme-2-accent: var(--color-neutral-darkest);
+}
+
+body {
+    background-color: var(--color-scheme-1-background);
+    color: var(--color-scheme-1-text);
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: var(--second-family);
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-white);
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+    h1 {
+        font-size: 56px;
+    }
+}
+
+h2 {
+    font-family: var(--second-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+    h2 {
+        font-size: 48px;
+    }
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subheader {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: 32px;
+}
+
+button {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 24px;
+
+    font-weight: 500;
+    color: var(--color-white);
+
+    box-shadow: 0 1px 2px 0 var(--opacity-neutral-darkest-5),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px var(--opacity-neutral-darkest-15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 var(--opacity-white-5);
+    background: var(--color-coffee-dark);
+}
+
+button:hover,
+button:focus {
+    opacity: 0.5;
+}
+
+button:active {
+    box-shadow: none;
+    opacity: 1;
+}
+
+button:disabled {
+    opacity: 0.2;
+}
+
+input {
+    background: var(--opacity-transparent);
+    border: 1px solid var(--opacity-neutral-darkest-15);
+    border-radius: 12px;
+    padding: 8px 12px;
+    max-width: 340px;
+    outline: none;
+
+    color: var(--color-scheme-2-text);
+}
+
+input::placeholder {
+    color: var(--opacity-neutral-darkest-60);
+}
+
+input.error {
+    border-color: var(--color-error-red);
+    color: var(--color-error-red);
+}
+
+a {
+    font-weight: 500;
+    color: var(--color-neutral-darkest);
+    display: block;
+}
+
+a:hover,
+a:focus {
+    opacity: 0.5;
+}
+
+a:active {
+    opacity: 0.7;
+}
+
+a:disabled {
+    opacity: 0.2;
+}
+
+section {
+    padding: 64px 0;
+}
