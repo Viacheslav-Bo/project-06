@@ -1,0 +1,117 @@
+.quality-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.subheader {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.our-quality {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+    padding-bottom: 24px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.quality-description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+    max-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.quality-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quality-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    overflow: hidden;
+    max-width: 421.33px;
+    text-align: center;
+}
+
+.quality-image-wrapper {
+    line-height: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.quality-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border-radius: 32px;
+}
+
+.specification {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-top: 32px;
+    padding: 0;
+}
+
+.text-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.specification-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.specification-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-scheme-1-text);
+    opacity: 0.8;
+    margin-top: auto;
+    text-align: center;
+    max-width: 420px;
+    margin: 0 auto;
+}
