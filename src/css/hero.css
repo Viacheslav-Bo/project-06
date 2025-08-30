@@ -7,8 +7,8 @@ background-position: center;
 background-size: cover;
     }
 .hero-section .container{
-   
-padding: 0px;
+   margin: 0;
+padding: 0px 32px;
 }
 .hero-title{
 
@@ -49,6 +49,7 @@ box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0
 }
 
 .hero-section .container{
+    padding-right: 0;
      padding-left: 32px;
 margin: 0px;
 max-width: 560px;
