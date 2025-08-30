@@ -12,13 +12,7 @@
     margin-bottom: 16px;
 }
 .location-header {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
     color: var(--color-scheme-1-text);
-    margin-bottom: 24px;
 }
 .location-text {
     font-family: var(--font-family);
@@ -107,9 +101,6 @@
     .location-information-div,
     .location-map-div {
         flex-basis: calc((100% - 24px) / 2);
-    }
-    .location-header {
-        font-size: 48px;
     }
     .location-list {
         display: flex;
