@@ -1,0 +1,19 @@
+.experience-picture {
+    border-radius: 32px;
+}
+
+.experience-heading {
+    max-width: 288px;
+    text-align: center;
+}
+
+.experience-descr {
+    max-width: 288px;
+    text-align: center;
+}
+
+.experience-list {
+    width: 288px;
+}
+
+.expirience-section {}
