@@ -4,11 +4,11 @@
 background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero-phone.jpg); 
 background-repeat: no-repeat;
 background-position: center;
-background-size: cover;
     }
 .hero-section .container{
    margin: 0;
 padding: 0px 32px;
+max-width: 320px;
 }
 .hero-title{
 
@@ -19,7 +19,7 @@ padding: 0px 32px;
     font-weight: 400;
 font-size: 18px;
 line-height: 1.5;
-color: #fff;
+color: var(--color-white);
 }
 .hero-btn{
     padding: 10px 24px;
@@ -31,6 +31,12 @@ line-height: 1.5;
 color: var(--color-white);
 border-radius: 100px;
 box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+}
+    
+@media screen and (min-width: 320px ) and (max-width:375px) {
+ .hero-section{
+    background-size: cover;
+ }   
 }
 @media (min-resolution: 2dppx)  {
     .hero-section{
@@ -45,6 +51,7 @@ box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0
 @media (min-resolution: 2dppx)  {
     .hero-section{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero@2x-tablet.jpg); 
+    padding: 311.5px 0;
     }
 }
 
@@ -52,6 +59,7 @@ box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0
     padding-right: 0;
 margin: 0px;
 max-width: 560px;
+max-height: 900px;
 }
 
 }
@@ -62,6 +70,7 @@ max-width: 560px;
 
     .hero-section .container{
         padding-left: 64px;
+        
     }
 
 
