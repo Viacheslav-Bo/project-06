@@ -1,3 +1,4 @@
+/*header section*/
 .logo {
     display: flex;
     justify-content: center;
@@ -6,7 +7,6 @@
     display: none;
 }
 .header-nav {
-    width: 100%;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -45,5 +45,6 @@
 @media only screen and (min-width: 1312px) {
 .header-container {
     max-width: 1440px;
+    padding: 0 64px;
 }
 }
