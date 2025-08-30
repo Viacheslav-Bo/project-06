@@ -14,10 +14,7 @@ min-width: 0px;
 .hero-title{
 
     font-weight: 400;
-font-size: 40px;
-line-height: 1.2;
-letter-spacing: -0.01em;
-color: #fff;
+
 }
 .hero-info{
     font-weight: 400;
@@ -27,13 +24,12 @@ color: #fff;
 }
 .hero-btn{
     padding: 10px 24px;
-background-color: #6F4E37;
+background-color: var(--color-coffee-dark);
 max-width: 135px;
 max-height: 44px;
-font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-color: #fff;
+color: var(--color-white);
 border-radius: 100px;
 box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
 }
@@ -62,7 +58,7 @@ max-width: 560px;
     margin-left: 32px;
 }
 }
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1440px) {
 .hero-section{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero-dekstop.jpg); 
 }
@@ -70,8 +66,6 @@ max-width: 560px;
     .hero-section .container{
         margin-left: 64px;
     }
-.hero-title{
-    font-size: 56px;
-}
+
 
 }
