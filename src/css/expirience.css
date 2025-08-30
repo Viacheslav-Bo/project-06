@@ -3,17 +3,49 @@
 }
 
 .experience-heading {
-    max-width: 288px;
     text-align: center;
 }
 
 .experience-descr {
-    max-width: 288px;
     text-align: center;
 }
 
 .experience-list {
-    width: 288px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.expirience-section {}
+
+@media (max-width: 767px) {
+    .expirience-section .container {
+        width: 288px;
+    }
+}
+
+@media (min-width: 768px) {
+    .experience-heading {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .experience-descr {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .experience-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .experience-list {
+        height: 950px;
+        flex-direction: column;
+    }
+
+
+}
