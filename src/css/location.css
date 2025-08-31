@@ -1,0 +1,105 @@
+.location-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.location-under-text {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.location-header {
+    color: var(--color-scheme-1-text);
+}
+.location-text {
+    margin-bottom: 40px;
+}
+.location-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.location-icon {
+    fill: var(--color-scheme-1-text);
+    margin-bottom: 16px;
+}
+
+.location-list-item-title {
+    font-family: var(--second-family);
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.location-address-link {
+    color: var(--color-scheme-1-text);
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.location-address {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-style: normal;
+}
+.location-map-link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.location-map-link-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-neutral-darkest);
+}
+.location-map-link-icon {
+    fill: var(--color-scheme-1-text);
+}
+.location-map {
+    border-radius: 40px;
+    width: 100%;
+    max-width: 375px;
+    min-width: 320px;
+    height: auto;
+    aspect-ratio: 288 / 307;
+}
+.location-map-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
+    .location-list {
+        flex-direction: row;
+    }
+    .location-list-item {
+        flex-basis: calc((100% - 80px) / 3);
+    }
+    .location-map {
+        width: 704px;
+        height: 377px;
+        aspect-ratio: unset;
+        min-width: none;
+        max-width: none;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .location-section .container {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .location-information-div,
+    .location-map-div {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .location-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .location-map {
+        width: 869px;
+        height: 697px;
+    }
+}
