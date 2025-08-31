@@ -10,7 +10,7 @@
   align-items: flex-start;
   padding: 20px;
   background-color: #f5d9bc; 
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   pointer-events: none;
   transform: translateY(-100%);
@@ -21,7 +21,7 @@
 }
 
 .mobile-menu-section.is-open {
-  opacity: 1;
+  opacity: 0;
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
