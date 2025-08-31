@@ -4,11 +4,7 @@
     gap: 32px;
 }
 .location-under-text {
-    font-family: var(--font-family);
     font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--color-scheme-1-text);
     margin-bottom: 16px;
 }
 .location-header {
@@ -29,42 +25,32 @@
 
 .location-list-item-title {
     font-family: var(--second-family);
-    font-weight: 400;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 1.4;
     letter-spacing: -0.01em;
-    color: var(--color-scheme-1-text);
     margin-bottom: 8px;
 }
 
 .location-address-link {
-    font-family: var(--font-family);
+    color: var(--color-scheme-1-text);
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: var(--color-scheme-1-text);
 }
 
 .location-address {
-    font-family: var(--font-family);
-    font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
-    color: var(--color-scheme-1-text);
     margin-bottom: 16px;
 }
 .location-map-link {
     display: flex;
-    gap: 16.29px;
+    gap: 16px;
     align-items: center;
 }
 .location-map-link-text {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
     color: var(--color-neutral-darkest);
 }
 .location-map-link-icon {
@@ -72,8 +58,16 @@
 }
 .location-map {
     border-radius: 40px;
-    width: 288px;
-    height: 307px;
+    width: 100%;
+    max-width: 375px;
+    min-width: 320px;
+    height: auto;
+    aspect-ratio: 288 / 307;
+}
+.location-map-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (min-width: 768px) {
     .location-list {
@@ -83,9 +77,11 @@
         flex-basis: calc((100% - 80px) / 3);
     }
     .location-map {
-        border-radius: 40px;
         width: 704px;
         height: 377px;
+        aspect-ratio: unset;
+        min-width: none;
+        max-width: none;
     }
 }
 @media screen and (min-width: 1440px) {
