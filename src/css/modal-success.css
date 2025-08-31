@@ -36,8 +36,11 @@ margin-bottom: 16px;
     max-width: 256px;
   margin: 0 auto;
   margin-bottom: 24px;
-          text-align: center;
+         
 
+}
+.modal-section-info{
+ text-align: center;
 }
 
 .modal-btn{
