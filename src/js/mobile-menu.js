@@ -11,3 +11,11 @@ const openBtn = document.getElementById('data-burger-open');
 openBtn.addEventListener('click', () => {
   menuSection.classList.add('is-open');
 });
+
+// Закриття меню при кліку на пункт меню
+const menuLinks = document.querySelectorAll('.menu-link-menu');
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menuSection.classList.remove('is-open');
+  });
+});
