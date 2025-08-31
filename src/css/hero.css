@@ -1,11 +1,11 @@
     .hero-section{
-max-width: 320px;
+min-width: 320px;
         padding: 108px 0;
 background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero-phone.jpg); 
 background-repeat: no-repeat;
 background-position: center;
     background-size: cover;
-min-width: 375px;
+max-width: 375px;
 margin: 0 auto;
     }
 .hero-section .container{
