@@ -24,16 +24,6 @@
 }
 
 @media (min-width: 768px) {
-    .experience-heading {
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .experience-descr {
-        max-width: 100%;
-        text-align: center;
-    }
-
     .experience-list {
         flex-direction: row;
         flex-wrap: wrap;

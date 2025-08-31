@@ -21,6 +21,9 @@
     box-shadow: none; 
 }
 @media only screen and (min-width: 768px) {
+.header-container {
+    padding: 0 64px;
+}
 .burger-btn {
     display: none;
 }
@@ -34,17 +37,13 @@
     gap: 32px;
 }
 .nav-link-menu {
-   font-family: "Quicksand", sans-serif;
    font-weight: 400;
    font-size: 16px;
-   line-height: 1.5;
-   color: #0b0803;
    padding: 24px 0;
 }
 }
-@media only screen and (min-width: 1312px) {
+@media only screen and (min-width: 1440px) {
 .header-container {
     max-width: 1440px;
-    padding: 0 64px;
 }
 }
