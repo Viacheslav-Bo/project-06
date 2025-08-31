@@ -1,0 +1,104 @@
+@media (min-width: 1440px){
+    .subscribe-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+.subscribe-title {
+    margin-bottom: 24px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-neutral-darkest);
+}
+
+@media (min-width: 1440px) {
+    .subscribe-title {
+        font-size: 48px;
+    }
+}
+
+.subscribe-text {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-neutral-darkest);
+}
+
+@media (max-width: 1439px){
+    .subscribe-wrapper{
+        margin-bottom: 32px;
+    }
+}
+
+.subscribe-input {
+    padding-left: 12px;
+    outline: transparent;
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    border-radius: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-neutral-darkest);
+    width: 288px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.subscribe-input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(11, 8, 3, 0.6);
+}
+@media (min-width: 768px){
+    .subscribe-input{
+        width: 340px;
+    }
+}
+.subscribe-box{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+@media (min-width: 768px){
+    .subscribe-box{
+        flex-direction: row;
+
+    }
+}
+
+.subscribe-label {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 1.5;
+color: var(--color-neutral-darkest);
+}
+
+.subscribe-button {
+    min-width: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+@media (min-width: 768px){
+    .subscribe-button{
+        min-width: 158px;
+    }
+}
+
+.subscribe-icon {
+    fill: #fff;
+}
