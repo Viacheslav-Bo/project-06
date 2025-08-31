@@ -33,10 +33,10 @@ margin-bottom: 16px;
     max-width: 256px;
   margin: 0 auto;
   margin-bottom: 24px;
+          text-align: center;
+
 }
-.modal-sec-content-info>*{
-        text-align: center;
-}
+
 .modal-btn{
     width: 100%;
 }
@@ -75,10 +75,7 @@ font-size: 36px;
 display: grid;
 justify-content: center;
 }
-.modal-section .container{
-    display: grid;
-    justify-content: center;
-}
+
 .modal-section-img{
         max-width: none;
     width: 644px;
@@ -86,13 +83,11 @@ justify-content: center;
 }
 .modal-btn{
     max-width: 340px;
+    margin: 0 auto;
 }
-.btn-box{
-    display: flex;
-    justify-content: center;
+
 }
-}
-/*
+
 
 @media screen  and (min-width:1440px){
      .modal-section .container{
@@ -109,4 +104,4 @@ font-size: 48px;
     max-width: 244px;
 }
 }
- */
+ 
