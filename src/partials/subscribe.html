@@ -2,30 +2,61 @@
   <div class="container subscribe-container">
     <div class="subscribe-wrapper">
       <h2 class="subscribe-title">Join Our Coffee Community</h2>
-      <p class="subscribe-text">Experience the joy of coffee delivered right to your door. Sign up today!</p>
+      <p class="subscribe-text">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
       <form class="subscribe-form">
         <div class="subscribe-box">
           <div class="subscribe-input-wrapper">
-            <input type="email" id="subscribe-email" name="subscribe-email" class="subscribe-input"
-              placeholder="Your Email Here" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+            <input
+              type="email"
+              id="subscribe-email"
+              name="subscribe-email"
+              class="subscribe-input"
+              placeholder="Your Email Here"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
             <p class="text-valid">Success!</p>
             <p class="text-invalid">Invalid email, try again</p>
           </div>
-          <button class="subscribe-button" type="submit">Subscribe
+          <button class="subscribe-button" type="submit" id="subscribe-btn">
+            Subscribe
             <svg class="subscribe-icon" width="24" height="24">
               <use href="/img/sprite.svg#icon-chevrons-right"></use>
             </svg>
           </button>
         </div>
-        <label for="subscribe-email" class="subscribe-label">By clicking Get Started, you agree to our Terms and
-          Conditions.</label>
+        <label for="subscribe-email" class="subscribe-label"
+          >By clicking Get Started, you agree to our Terms and
+          Conditions.</label
+        >
       </form>
     </div>
     <picture>
-      <source srcset="/img/subscribe/mob-sub.webp 1x, /img/subscribe/mob-sub@2x.webp 2x" media="(max-width: 767px)">
-      <source srcset="/img/subscribe/tab-sub.webp 1x, /img/subscribe/tab-sub@2x.webp 2x" media="(max-width: 1439px)">
-      <source srcset="/img/subscribe/desk-sub.webp 1x, /img/subscribe/desk-sub@2x.webp 2x" media="(min-width: 1440px)">
-      <img src="/img/subscribe/mob-sub.webp" alt="subscribe-image">
+      <source
+        srcset="
+          /img/subscribe/mob-sub.webp    1x,
+          /img/subscribe/mob-sub@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          /img/subscribe/tab-sub.webp    1x,
+          /img/subscribe/tab-sub@2x.webp 2x
+        "
+        media="(max-width: 1439px)"
+      />
+      <source
+        srcset="
+          /img/subscribe/desk-sub.webp    1x,
+          /img/subscribe/desk-sub@2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <img src="/img/subscribe/mob-sub.webp" alt="subscribe-image" />
     </picture>
   </div>
 </section>
