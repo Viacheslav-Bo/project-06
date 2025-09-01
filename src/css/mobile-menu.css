@@ -1,8 +1,9 @@
-.container{
+.mobile-menu-container {
   min-width: 320px;
   max-width: 375px;
   padding: 0;
 }
+
 .mobile-menu-section {
   position: fixed;
   top: 0;
@@ -13,7 +14,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #f5d9bc; 
+  background-color: #f5d9bc;
 
   opacity: 0;
   visibility: hidden;
@@ -45,13 +46,13 @@
   position: relative;
 }
 
-.menu-mobile-header{
+.menu-mobile-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   height: 72px;
-  width: 100%; 
+  width: 100%;
 }
 
 /* Логотип */
@@ -75,7 +76,7 @@
   box-shadow: none;
   cursor: pointer;
   position: static;
-  margin-left: auto;  
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +85,7 @@
 .menu-close-icon {
   width: 24px;
   height: 24px;
-  fill: #0B0803; 
+  fill: #0B0803;
 }
 
 /* Список меню */
@@ -108,10 +109,11 @@
 @media (max-width: 320px) {
 
   .menu-nav-list-menu {
-    align-items: center;   
-    justify-content: center;      
-    gap: 30px;             
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
   }
+
   .menu-link-menu {
     font-size: 18px;
     text-align: center;
@@ -121,4 +123,3 @@
 .menu-link-menu:hover {
   color: #7a4e2d;
 }
-
