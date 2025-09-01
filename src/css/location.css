@@ -60,8 +60,8 @@
 .location-map {
     border-radius: 40px;
     width: 100%;
-    max-width: 375px;
-    min-width: 320px;
+    max-width: 343px;
+    min-width: 288px;
     height: auto;
     aspect-ratio: 288 / 307;
 }
