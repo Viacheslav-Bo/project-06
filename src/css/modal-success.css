@@ -108,5 +108,8 @@ font-size: 48px;
 .modal-section-content-other{
     margin: 0 auto;
 }
+  .btn-close {
+ right: 73px;
+}
 }
  
