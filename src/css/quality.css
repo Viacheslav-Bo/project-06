@@ -79,7 +79,6 @@
         max-width: 704px;
         gap: 32px 24px;
         margin: 0 auto 40px;
-        /* Центрирование списка */
     }
 
     .quality-item {
@@ -109,9 +108,6 @@
     }
 }
 
-/* =============================================================================
-Desktop Styles (1440px and up)
-========================================================================== */
 @media screen and (min-width: 1440px) {
     .quality-section {
         padding: 64px 0;
@@ -128,12 +124,10 @@ Desktop Styles (1440px and up)
 
     .quality-list {
         flex-wrap: nowrap;
-        /* Убираем перенос строк */
         justify-content: center;
         gap: 24px;
         max-width: 1312px;
         margin: 0 auto;
-        /* Убираем нижний отступ */
         align-items: flex-start;
     }
 
