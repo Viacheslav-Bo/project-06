@@ -3,12 +3,6 @@
     text-align: center;
 }
 
-@media screen and (min-width: 1440px) {
-    .quality-section {
-        padding: 64px 0;
-    }
-}
-
 .subheader {
     letter-spacing: 2px;
     margin-bottom: 16px;
@@ -23,30 +17,11 @@
     margin: 0 auto 24px;
 }
 
-@media screen and (min-width: 768px) {
-    .our-quality{
-        max-width: 452px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .our-quality {
-        font-size: 48px;
-        max-width: 768px;
-    }
-}
-
 .quality-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     margin: 0 auto 32px;
-}
-
-@media screen and (min-width: 1440px) {
-    .quality-description {
-        max-width: 768px;
-    }
 }
 
 .quality-list {
@@ -57,26 +32,6 @@
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 768px) {
-    .quality-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 704px;
-        gap: 32px 24px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .quality-list {
-        flex-direction: row;
-        justify-content: center;
-        gap: 24px;
-        max-width: 1312px;
-        margin: 0 auto;
-        align-items: flex-start;
-    }
-}
-
 .quality-item {
     display: flex;
     flex-direction: column;
@@ -84,68 +39,18 @@
     max-width: 288px;
 }
 
-@media screen and (min-width: 768px) {
-    .quality-item {
-        flex-basis: calc((100% - 24px) / 2);
-        max-width: 340px;
-    }
-
-    .quality-item:nth-child(3) {
-        flex-basis: 100%;
-        max-width: 704px;
-    }
-    .quality-item:nth-child(3) .specification {
-        text-align: center;
-    }
-    
-    .quality-item:nth-child(3) .specification-text {
-        max-width: 440px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .quality-item {
-        flex-basis: calc((100% - 48px) / 3);
-        max-width: 421px;
-        flex-shrink: 0;
-    }
-}
-
 .quality-image-wrapper {
     line-height: 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 32px;
     overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .quality-image {
     width: 100%;
     height: 164.05px;
     object-fit: cover;
-}
-
-@media screen and (min-width: 768px) {
-    .quality-image {
-        height: 194px;
-    }
-
-    .quality-item:nth-child(3) .quality-image {
-        height: 401px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .quality-image {
-        height: 240px;
-    }
-}
-
-
-@media screen and (min-width: 1440px) {
-    .specification {
-        margin-top: 32px;
-    }
 }
 
 .specification-title {
@@ -161,4 +66,103 @@
     line-height: 1.5;
     opacity: 0.8;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .our-quality {
+        max-width: 452px;
+    }
+
+    .quality-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 704px;
+        gap: 32px 24px;
+        margin: 0 auto 40px;
+    }
+
+    .quality-item {
+        flex-basis: calc((100% - 24px) / 2);
+        max-width: 340px;
+    }
+
+    .quality-item:nth-child(3) {
+        flex-basis: 100%;
+        max-width: 704px;
+    }
+
+    .quality-item:nth-child(3) .specification {
+        text-align: center;
+    }
+
+    .quality-item:nth-child(3) .specification-text {
+        max-width: 440px;
+    }
+
+    .quality-image {
+        height: 194px;
+    }
+
+    .quality-item:nth-child(3) .quality-image {
+        height: 401px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .quality-section {
+        padding: 64px 0;
+    }
+
+    .our-quality {
+        font-size: 48px;
+        max-width: 768px;
+    }
+
+    .quality-description {
+        max-width: 768px;
+    }
+
+    .quality-list {
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 24px;
+        max-width: 1312px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .quality-item {
+        flex-basis: calc((100% - 48px) / 3);
+        max-width: 421px;
+        flex-shrink: 0;
+    }
+
+    .quality-item:nth-child(3) {
+        flex-basis: 100%;
+        max-width: 421.33px;
+    }
+
+    .quality-item:nth-child(3) .quality-image {
+        height: 240px;
+    }
+
+    .quality-item:nth-child(3) .specification {
+        text-align: left;
+    }
+
+    .quality-item:nth-child(3) .specification-text {
+        max-width: none;
+    }
+
+    .quality-image {
+        height: 240px;
+    }
+
+    .specification {
+        margin-top: 32px;
+    }
+
+    .quality-image-wrapper {
+        margin-bottom: 0;
+    }
 }
