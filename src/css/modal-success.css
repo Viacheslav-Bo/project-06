@@ -16,7 +16,6 @@ align-items: center;
 .modal-section .container{
     border-radius: 40px;
     min-width: 288px;
-    min-width: 0;
     background-color: #e0cbb4;
     padding: 64px 16px;
     position: absolute;
