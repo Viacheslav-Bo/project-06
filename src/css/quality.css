@@ -78,7 +78,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 704px;
-        gap:24px;
+        gap: 24px;
         margin: 0 auto 40px;
     }
 
@@ -87,19 +87,19 @@
         max-width: 340px;
     }
 
-.quality-item:nth-child(1) .specification-title,
-.quality-item:nth-child(2) .specification-title {
-    max-width: 284px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .quality-item:nth-child(1) .specification-title,
+    .quality-item:nth-child(2) .specification-title {
+        max-width: 284px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.quality-item:nth-child(1) .specification-text,
-.quality-item:nth-child(2) .specification-text {
-    max-width: 294px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .quality-item:nth-child(1) .specification-text,
+    .quality-item:nth-child(2) .specification-text {
+        max-width: 294px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .quality-item:nth-child(3) {
         flex-basis: 100%;
@@ -158,7 +158,7 @@
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     .quality-item .specification {
         text-align: left;
     }
