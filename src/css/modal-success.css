@@ -108,5 +108,11 @@ font-size: 48px;
 .modal-section-content-other{
     margin: 0 auto;
 }
+    .modal-section-img {
+        width: 100%;
+        max-width: 644px;
+        margin: 0 auto 48px auto;
+    }
+
 }
  
