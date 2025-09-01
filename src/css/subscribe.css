@@ -1,13 +1,3 @@
-@media (min-width: 1440px){
-    .subscribe-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-
-
-
 .subscribe-title {
     margin-bottom: 24px;
     font-family: var(--second-family);
@@ -18,11 +8,7 @@
     color: var(--color-neutral-darkest);
 }
 
-@media (min-width: 1440px) {
-    .subscribe-title {
-        font-size: 48px;
-    }
-}
+
 
 .subscribe-text {
     margin-bottom: 32px;
@@ -31,11 +17,7 @@
     color: var(--color-neutral-darkest);
 }
 
-@media (max-width: 1439px){
-    .subscribe-wrapper{
-        margin-bottom: 32px;
-    }
-}
+
 
 .subscribe-input {
     padding-left: 12px;
@@ -59,31 +41,24 @@
     line-height: 1.5;
     color: rgba(11, 8, 3, 0.6);
 }
-@media (min-width: 768px){
-    .subscribe-input{
-        width: 340px;
-    }
-}
-.subscribe-box{
+
+
+.subscribe-box {
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     gap: 24px;
 }
-@media (min-width: 768px){
-    .subscribe-box{
-        flex-direction: row;
 
-    }
-}
 
 .subscribe-label {
+    display: block;
     font-family: var(--font-family);
-font-weight: 400;
-font-size: 12px;
-line-height: 1.5;
-color: var(--color-neutral-darkest);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-neutral-darkest);
 }
 
 .subscribe-button {
@@ -93,12 +68,81 @@ color: var(--color-neutral-darkest);
     justify-content: center;
     gap: 12px;
 }
-@media (min-width: 768px){
-    .subscribe-button{
-        min-width: 158px;
-    }
-}
+
 
 .subscribe-icon {
     fill: #fff;
+}
+
+.subscribe-input:not(:placeholder-shown):invalid {
+    border-color: #7f1c1c;
+}
+
+.subscribe-input:not(:placeholder-shown):valid {
+    border-color: #008000;
+}
+
+.text-valid,
+.text-invalid {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    display: none;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.text-valid {
+    color: #008000;
+}
+
+.text-invalid {
+    color: #7f1c1c;
+}
+
+.subscribe-input:not(:placeholder-shown):valid~.text-valid {
+    display: block;
+    padding-left: 4px;
+}
+
+.subscribe-input:not(:placeholder-shown):invalid~.text-invalid {
+    display: block;
+    padding-left: 4px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .subscribe-input {
+        width: 340px;
+    }
+
+    .subscribe-box {
+        flex-direction: row;
+
+    }
+
+    .subscribe-button {
+        min-width: 158px;
+    }
+
+}
+
+@media (max-width: 1439px) {
+    .subscribe-wrapper {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .subscribe-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .subscribe-title {
+        font-size: 48px;
+    }
 }
