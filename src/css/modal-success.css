@@ -113,6 +113,8 @@ font-size: 48px;
         max-width: 644px;
         margin: 0 auto 48px auto;
     }
-
+ .btn-close {
+ right: 73px;
+}
 }
  
