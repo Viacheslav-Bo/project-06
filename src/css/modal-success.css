@@ -16,7 +16,6 @@ align-items: center;
 .modal-section .container{
     border-radius: 40px;
     min-width: 288px;
-    min-width: 0;
     background-color: #e0cbb4;
     padding: 64px 16px;
     position: absolute;
@@ -66,8 +65,9 @@ box-shadow: none;
 @media screen  and (min-width:768px){
     .modal-section .container{
     width: 704px;
-padding: 64px;    
-max-height: 771px;
+padding: 64px 30px;    
+ height: 771px;
+
 }
 .modal-sec-content-info{
 max-width: 576px;
@@ -111,5 +111,12 @@ font-size: 48px;
   .btn-close {
  right: 73px;
 }
+    .modal-section-img {
+        width: 100%;
+        max-width: 644px;
+        margin: 0 auto 48px auto;
+    }
+
+ main
 }
  
