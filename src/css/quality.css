@@ -8,12 +8,10 @@
 }
 
 .our-quality {
-    max-width: 288px;
     margin: 0 auto 24px;
 }
 
-.quality-description {
-    max-width: 288px;
+.quality-description {  
     margin: 0 auto 32px;
 }
 
@@ -27,7 +25,7 @@
 .quality-item {
     display: flex;
     flex-direction: column;
-    max-width: 288px;
+    
 }
 
 .quality-image-wrapper {
@@ -45,6 +43,14 @@
 .specification-text {
     font-size: 16px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .our-quality,
+    .quality-description,
+    .quality-item {
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
