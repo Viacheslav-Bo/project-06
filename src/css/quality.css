@@ -1,5 +1,4 @@
 .quality-section {
-    padding: 40px 0;
     text-align: center;
 }
 
@@ -9,18 +8,12 @@
 }
 
 .our-quality {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
+    max-width: 288px;
     margin: 0 auto 24px;
 }
 
 .quality-description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
+    max-width: 288px;
     margin: 0 auto 32px;
 }
 
@@ -28,44 +21,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
-    margin-bottom: 40px;
+    gap: 24px;
 }
 
 .quality-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
     max-width: 288px;
 }
 
 .quality-image-wrapper {
-    line-height: 0;
-    box-shadow: none;
     border-radius: 32px;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .quality-image {
     width: 100%;
     height: 164.05px;
     object-fit: cover;
-    border-radius: 32px;
-}
-
-.specification-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 8px;
 }
 
 .specification-text {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    opacity: 0.8;
     margin: 0 auto;
 }
 
@@ -74,40 +52,31 @@
         max-width: 452px;
     }
 
+    .quality-description {
+        max-width: 704px;
+    }
+
     .quality-list {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 704px;
-        gap:24px;
-        margin: 0 auto 40px;
     }
 
     .quality-item {
-        flex-basis: calc((100% - 24px) / 2);
         max-width: 340px;
     }
-
-.quality-item:nth-child(1) .specification-title,
-.quality-item:nth-child(2) .specification-title {
-    max-width: 284px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.quality-item:nth-child(1) .specification-text,
-.quality-item:nth-child(2) .specification-text {
-    max-width: 294px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
     .quality-item:nth-child(3) {
         flex-basis: 100%;
         max-width: 704px;
     }
 
-    .quality-item:nth-child(3) .specification {
-        text-align: center;
+    .quality-item:first-child .specification-title {
+        max-width: 284px;
+        margin: 0 auto 8px;
+    }
+
+    .quality-item:first-child .specification-text {
+        max-width: 294px;
     }
 
     .quality-item:nth-child(3) .specification-text {
@@ -124,64 +93,13 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .quality-section {
-        padding: 64px 0;
-    }
-
-    .our-quality {
-        font-size: 48px;
-        max-width: 768px;
-    }
-
-    .quality-description {
-        max-width: 768px;
-    }
-
     .quality-list {
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 24px;
         max-width: 1312px;
-        margin: 0 auto;
         align-items: flex-start;
     }
 
     .quality-item {
-        flex-basis: calc((100% - 48px) / 3);
         max-width: 421px;
-        flex-shrink: 0;
-    }
-
-    .quality-item .specification-title,
-    .quality-item .specification-text {
-        max-width: none;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .quality-item .specification {
-        text-align: left;
-    }
-
-    .quality-item:nth-child(3) {
-        flex-basis: 100%;
-        max-width: 421.33px;
-    }
-
-    .quality-item:nth-child(3) .quality-image {
-        height: 240px;
-    }
-
-    .quality-item:nth-child(3) .specification {
-        text-align: left;
-    }
-
-    .quality-item:nth-child(3) .specification-text {
-        max-width: none;
-    }
-
-    .quality-image {
-        height: 240px;
     }
 
     .specification {
@@ -190,5 +108,21 @@
 
     .quality-image-wrapper {
         margin-bottom: 0;
+    }
+
+    .our-quality,
+    .quality-description {
+        max-width: 768px;
+    }
+
+    .quality-item:nth-child(3),
+    .quality-item:first-child .specification-title,
+    .quality-item:first-child .specification-text {
+        max-width: 421.33px;
+    }
+
+    .quality-item:nth-child(3) .quality-image,
+    .quality-image {
+        height: 240px;
     }
 }
