@@ -8,13 +8,13 @@
 }
 
 .our-quality {
-    margin: 0 auto 24px;
     max-width: 288px;
+    margin: 0 auto 24px;
 }
 
 .quality-description {
-    margin: 0 auto 32px;
     max-width: 288px;
+    margin: 0 auto 32px;
 }
 
 .quality-list {
@@ -27,15 +27,13 @@
 .quality-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
     max-width: 288px;
 }
 
 .quality-image-wrapper {
-    line-height: 0;
     border-radius: 32px;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .quality-image {
@@ -46,7 +44,6 @@
 
 .specification-text {
     font-size: 16px;
-    opacity: 0.8;
     margin: 0 auto;
 }
 
@@ -62,13 +59,9 @@
     .quality-list {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 704px;
-        gap: 32px 24px;
-        margin: 0 auto 40px;
     }
 
     .quality-item {
-        flex-basis: calc((100% - 24px) / 2);
         max-width: 340px;
     }
 
@@ -77,12 +70,9 @@
         max-width: 704px;
     }
 
-    .quality-item:nth-child(3) .specification {
-        text-align: center;
-    }
-
     .quality-item:first-child .specification-title {
-        max-width: 294px;
+        max-width: 284px;
+        margin: 0 auto 8px;
     }
 
     .quality-item:first-child .specification-text {
@@ -103,56 +93,13 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .our-quality {
-        max-width: 768px;
-    }
-
-    .quality-description {
-        max-width: 768px;
-    }
-
     .quality-list {
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 24px;
         max-width: 1312px;
-        margin: 0 auto;
         align-items: flex-start;
     }
 
     .quality-item {
-        flex-basis: calc((100% - 48px) / 3);
         max-width: 421px;
-        flex-shrink: 0;
-    }
-
-    .quality-item:nth-child(3) {
-        flex-basis: 100%;
-        max-width: 421.33px;
-    }
-
-    .quality-item:nth-child(3) .quality-image {
-        height: 240px;
-    }
-
-    .quality-item:first-child .specification-title {
-        max-width: 421.33px;
-    }
-
-    .quality-item:first-child .specification-text {
-        max-width: 421.33px;
-    }
-
-    .quality-item:nth-child(3) .specification {
-        text-align: left;
-    }
-
-    .quality-item:nth-child(3) .specification-text {
-        max-width: none;
-    }
-
-    .quality-image {
-        height: 240px;
     }
 
     .specification {
@@ -161,5 +108,21 @@
 
     .quality-image-wrapper {
         margin-bottom: 0;
+    }
+
+    .our-quality,
+    .quality-description {
+        max-width: 768px;
+    }
+
+    .quality-item:nth-child(3),
+    .quality-item:first-child .specification-title,
+    .quality-item:first-child .specification-text {
+        max-width: 421.33px;
+    }
+
+    .quality-item:nth-child(3) .quality-image,
+    .quality-image {
+        height: 240px;
     }
 }
