@@ -1,5 +1,6 @@
 .experience-picture {
     border-radius: 32px;
+    width: 100%;
 }
 
 .experience-heading {
@@ -14,13 +15,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-
-
-@media (max-width: 767px) {
-    .expirience-section .container {
-        width: 288px;
-    }
 }
 
 @media (min-width: 768px) {
