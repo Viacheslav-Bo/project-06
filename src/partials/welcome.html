@@ -1,3 +1,57 @@
 <section class="welcome-section" id="welcome">
-  <div class="container"></div>
+  <div class="container">
+    <div class="welcome-container">
+      <div class="welcome-content">
+        <p class="subheader">Welcome</p>
+        <h2 class="welcome-title title-h2">
+          Our Journey: Passion for Quality Coffee
+        </h2>
+      </div>
+      <div class="welcome-content">
+        <p class="welcome-text paragraph">
+          At CoffeeJoy, we believe that every cup tells a story. Our mission is
+          to bring you the finest coffee experiences, crafted with care and
+          dedication. We are committed to sourcing high-quality beans and
+          roasting them to perfection, ensuring each sip is a delight.
+        </p>
+        <div class="welcome-content-btn">
+          <a class="welcome-btn" href="#location">
+            Find location
+            <svg class="welcome-btn-icon" width="20" height="20">
+              <use href="/img/sprite.svg#icon-place-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="welcome-img">
+      <picture class="welcome-picture">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/welcome/desk-welcome-min.jpg    1x,
+            /img/welcome/desk-welcome@2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/welcome/tab-welcome-min.jpg    1x,
+            /img/welcome/tab-welcome@2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/welcome/mob-welcome-min.jpg    1x,
+            /img/welcome/mob-welcome@2x-min.jpg 2x
+          "
+        />
+        <img
+          src="/img/welcome/mob-welcome-min.jpg"
+          alt="barista preparing coffee with care pouring from a kettle into a dripper or arranging freshly roasted beans on a table"
+        />
+      </picture>
+    </div>
+  </div>
 </section>

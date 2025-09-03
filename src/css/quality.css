@@ -1,0 +1,125 @@
+.quality-section {
+    text-align: center;
+}
+
+.subheader {
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.our-quality {
+    margin: 0 auto 24px;
+}
+
+.quality-description {  
+    margin: 0 auto 32px;
+}
+
+.quality-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.quality-item {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.quality-image-wrapper {
+    border-radius: 32px;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.quality-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.specification-text {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .our-quality,
+    .quality-description,
+    .quality-item {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .our-quality {
+        max-width: 452px;
+    }
+
+    .quality-description {
+        max-width: 704px;
+    }
+
+    .quality-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .quality-item {
+        max-width: 340px;
+    }
+
+    .quality-item:nth-child(3) {
+        flex-basis: 100%;
+        max-width: 704px;
+    }
+
+    .quality-item:first-child .specification-title {
+        max-width: 284px;
+        margin: 0 auto 8px;
+    }
+
+    .quality-item:first-child .specification-text {
+        max-width: 294px;
+    }
+
+    .quality-item:nth-child(3) .specification-text {
+        max-width: 440px;
+    }
+
+    .quality-image {
+        height: 194px;
+    }
+
+    .quality-item:nth-child(3) .quality-image {
+        height: 401px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .quality-list {
+        max-width: 1312px;
+        align-items: flex-start;
+    }
+
+    .quality-item {
+        max-width: 421px;
+    }
+
+    .our-quality,
+    .quality-description {
+        max-width: 768px;
+    }
+
+    .quality-item:nth-child(3),
+    .quality-item:first-child .specification-title,
+    .quality-item:first-child .specification-text {
+        max-width: 421.33px;
+    }
+
+    .quality-item:nth-child(3) .quality-image,
+    .quality-image {
+        height: 240px;
+    }
+}
