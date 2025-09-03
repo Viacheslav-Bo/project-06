@@ -8,16 +8,6 @@
   height: auto;
 }
 
-.testimonials-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
-  width: 100%;
-  height: auto;
-}
-
 .testimonials-list {
   display: flex;
   flex-wrap: wrap;
@@ -88,13 +78,6 @@
     gap: 48px;
   }
 
-  .testimonials-title {
-    align-items: flex-start;
-    flex-direction: row;
-    width: auto;
-    height: auto;
-  }
-
   .testimonials-list {
     flex-direction: row;
     justify-content: center;
@@ -121,9 +104,7 @@
   }
 
   .testimonials-title {
-    flex-direction: column;
     width: 416px;
-    height: 116px;
   }
 
   .testimonials-list {
