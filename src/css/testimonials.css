@@ -21,7 +21,7 @@
 .testimonials-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
@@ -41,6 +41,7 @@
   min-width: auto;
   background-color: var(--color-coffee-light);
   color: var(--color-neutral-darkest);
+  transition: background-color 300ms ease;
 }
 
 .testimonial-card:hover,
@@ -48,10 +49,10 @@
   background-color: var(--color-coffee);
 }
 
-.rating {
+.star-list {
   display: flex;
   gap: 4px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .star-icon {
@@ -65,7 +66,6 @@
   line-height: 1.5;
   margin-bottom: 26px;
   font-weight: 400;
-  min-width: 224px;
 }
 
 .author-name {
@@ -81,7 +81,6 @@
   gap: 16px;
   width: 100%;
   height: auto;
-  margin-top: auto;
 }
 
 @media (min-width: 768px) {
@@ -102,14 +101,12 @@
   }
 
   .testimonial-card {
-    width: calc(50% - 12px);
-    min-width: 310px;
-    width: 340px;
-    height: 253px;
+    width: calc((100% - 24px) / 2);
   }
 
   .review-text {
-    margin-bottom: auto;
+    margin-bottom: 16px;
+    flex-grow: 1;
   }
 
   .author-name {
@@ -135,8 +132,10 @@
 
   .testimonial-card {
     width: 310px;
-    height: 303px;
-    min-width: 310px;
+  }
+
+  .review-text {
+    margin-bottom: 38px;
   }
 
   .author-name {
