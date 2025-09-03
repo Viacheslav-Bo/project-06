@@ -1,27 +1,11 @@
-.subscribe-title {
-    margin-bottom: 24px;
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--color-neutral-darkest);
-}
-
-
-
 .subscribe-text {
     margin-bottom: 32px;
     font-size: 18px;
     line-height: 1.5;
-    color: var(--color-neutral-darkest);
 }
 
-
-
 .subscribe-input {
-    padding-left: 12px;
-    outline: transparent;
+    padding: 8px 12px;
     border: 1px solid rgba(11, 8, 3, 0.15);
     border-radius: 12px;
     font-family: var(--font-family);
@@ -29,9 +13,15 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-neutral-darkest);
-    width: 288px;
+    width: 100%;
     height: 40px;
     background-color: transparent;
+    transition: border-color 300ms ease;
+}
+
+.subscribe-input:focus {
+    outline: 2px solid var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 .subscribe-input::placeholder {
@@ -42,37 +32,41 @@
     color: rgba(11, 8, 3, 0.6);
 }
 
+.subscribe-input-wrapper {
+    width: 100%;
+    min-width: 288px;
+    max-width: 375px;
+}
+
 
 .subscribe-box {
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
     gap: 24px;
 }
 
-
-.subscribe-label {
-    display: block;
-    font-family: var(--font-family);
-    font-weight: 400;
+.subscribe-text-terms {
     font-size: 12px;
-    line-height: 1.5;
-    color: var(--color-neutral-darkest);
 }
 
 .subscribe-button {
-    min-width: 288px;
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
-    gap: 12px;
+    align-items: center;
     font-size: 16px;
+    min-width: 288px;
+    max-width: 375px;
+    width: 100%;
 }
 
+.img-sub {
+    width: 100%;
+}
 
 .subscribe-icon {
     fill: #fff;
+    margin-left: 12px;
 }
 
 .subscribe-input:not(:placeholder-shown):invalid {
@@ -89,8 +83,6 @@
     font-size: 12px;
     line-height: 1.5;
     display: none;
-    margin-top: 4px;
-    margin-bottom: 0;
 }
 
 .text-valid {
@@ -111,39 +103,48 @@
     padding-left: 4px;
 }
 
+.subscribe-wrapper {
+    margin-bottom: 32px;
+}
+
 
 
 
 @media screen and (min-width: 768px) {
     .subscribe-input {
-        width: 340px;
+        height: 44px;
     }
 
     .subscribe-box {
         flex-direction: row;
+        width: 522px;
+        max-height: 44px;
 
     }
 
     .subscribe-button {
+        width: 158px;
         min-width: 158px;
     }
 
-}
-
-@media (max-width: 1439px) {
-    .subscribe-wrapper {
+    .subscribe-text-terms {
         margin-bottom: 32px;
     }
+
 }
 
 @media screen and (min-width: 1440px) {
     .subscribe-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 32px;
+
     }
 
-    .subscribe-title {
-        font-size: 48px;
+    .subscribe-wrapper {
+        width: 640px;
+        margin-bottom: 0;
     }
+
+
 }
