@@ -1,9 +1,9 @@
 .footer-section {
     background-color: var(--color-coffee);
     padding: 24px 0;
-}  
+}
 
-.footer-nav {
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -12,17 +12,16 @@
     border-radius: 40px;
     margin-bottom: 32px;
     background-color: var(--color-coffee-light);
+    padding: 32px 48px;
+    gap: 32px;
 }
 
-.footer-logo {
-    padding-top: 32px;
-    margin-bottom: 40px;
-}
 
 .footer-socials {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
-    margin-bottom: 32px;
 }
 
 .footer-list {
@@ -31,7 +30,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 32px;
-    padding-bottom: 32px;
+    width: 100%;
 }
 
 .footer-reserved {
@@ -39,64 +38,59 @@
     font-size: 14px;
 }
 
+.foo-link {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-branding {
+    display: flex;
+    flex-direction: column;
+    width: 196px;
+    height: 156px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soc-linkos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (min-width: 768px) {
-    .footer-svg{
+    .footer-svg {
         width: 84px;
         height: 36px;
-    }
-    .footer-nav {
-        flex-direction: row;
-        flex-wrap: wrap;    
-        justify-content: center;
-        padding: 32px 48px;
-        gap: 32px 40px;
-    }
-    
-    .footer-logo {
-        padding-top: 0;
-        margin-bottom: 0;
-    }
-    
-    .footer-socials {
         display: flex;
-        gap: 12px;
-        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-list {
+        flex-direction: row;
+    }
+
+    .footer-branding {
+        flex-direction: row;
+        width: 220px;
+        height: 36px;
     }
 
     .socials-svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 24px;
         height: 24px;
-    }
-    
-    .footer-list {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        gap: 32px;
-        padding-bottom: 0;
-        margin: 0;
-    }
-    
-    .footer-reserved {
-        text-align: center;
-        font-size: 14px;
     }
 }
 
 @media only screen and (min-width: 1440px) {
-    .footer-nav{
-        align-items: center;
-        justify-content: start;
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
         gap: 0;
-    }
-    .footer-logo{
-        margin-right: 40px;
-    }
-    .footer-list{
-        margin-left: auto;
-    }
-    .footer-reserved {
-    text-align: center;
-    font-size: 14px;
     }
 }
