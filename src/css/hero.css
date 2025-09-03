@@ -1,7 +1,7 @@
     .hero-section{
 min-width: 320px;
         padding: 108px 0;
-background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero-phone.jpg); 
+background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/hero/hero-phone.jpg); 
 background-repeat: no-repeat;
 background-position: center;
     background-size: cover;
@@ -30,18 +30,18 @@ box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0
       
 @media (min-resolution: 2dppx)  {
     .hero-section{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero@2x-phone.jpg); 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/hero/hero@2x-phone.jpg); 
     }
 }
 @media screen and (min-width: 768px ) {
  .hero-section{
         min-width: 768px;
     padding: 311px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero-tablet.jpg); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero/hero-tablet.jpg); 
 }
 @media (min-resolution: 2dppx)  {
     .hero-section{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero@2x-tablet.jpg); 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/hero/hero@2x-tablet.jpg); 
     }
 }
 
@@ -58,7 +58,7 @@ max-height: 900px;
 .hero-section{
     max-width: 1440px;
     padding: 259px 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/hero/hero-dekstop.jpg); 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero/hero-dekstop.jpg); 
 }
 
     .hero-section .container{
