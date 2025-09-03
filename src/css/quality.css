@@ -36,7 +36,6 @@
 
 .quality-image {
     width: 100%;
-    height: 164.05px;
     object-fit: cover;
 }
 
@@ -106,14 +105,6 @@
 
     .quality-item {
         max-width: 421px;
-    }
-
-    .specification {
-        margin-top: 32px;
-    }
-
-    .quality-image-wrapper {
-        margin-bottom: 0;
     }
 
     .our-quality,
