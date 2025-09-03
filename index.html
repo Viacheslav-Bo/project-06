@@ -17,7 +17,7 @@
     />
 
     <script type="module" crossorigin src="/project-06/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-06/assets/index-Cz88wcKP.css">
+    <link rel="stylesheet" crossorigin href="/project-06/assets/index-BWFUbt_f.css">
   </head>
   <body>
     <!--header section-->
@@ -304,7 +304,7 @@
       <section class="subscribe-section" id="subscribe">
   <div class="container subscribe-container">
     <div class="subscribe-wrapper">
-      <h2 class="subscribe-title">Join Our Coffee Community</h2>
+      <h2 class="subscribe-title title-h2">Join Our Coffee Community</h2>
       <p class="subscribe-text">
         Experience the joy of coffee delivered right to your door. Sign up
         today!
@@ -317,24 +317,28 @@
               id="subscribe-email"
               name="subscribe-email"
               class="subscribe-input"
+              aria-label="Email"
               placeholder="Your Email Here"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,63}"
               required
             />
             <p class="text-valid">Success!</p>
             <p class="text-invalid">Invalid email, try again</p>
           </div>
-          <button class="subscribe-button" type="submit" id="subscribe-btn">
+          <button
+            class="subscribe-button main-btn"
+            type="submit"
+            id="subscribe-btn"
+          >
             Subscribe
             <svg class="subscribe-icon" width="24" height="24">
               <use href="/project-06/assets/sprite-BNd0NIHe.svg#icon-chevrons-right"></use>
             </svg>
           </button>
         </div>
-        <label for="subscribe-email" class="subscribe-label"
-          >By clicking Get Started, you agree to our Terms and
-          Conditions.</label
-        >
+        <p class="subscribe-text-terms">
+          By clicking Get Started, you agree to our Terms and Conditions.
+        </p>
       </form>
     </div>
     <picture>
@@ -350,7 +354,11 @@
         srcset="/project-06/assets/desk-sub-D2l5h6yN.webp 1x, /project-06/assets/desk-sub@2x-DknhIQYx.webp 2x"
         media="(min-width: 1440px)"
       />
-      <img src="/project-06/assets/mob-sub-BUx5xrBe.webp" alt="subscribe-image" />
+      <img
+        class="img-sub"
+        src="/project-06/assets/mob-sub-BUx5xrBe.webp"
+        alt="subscribe-image"
+      />
     </picture>
   </div>
 </section>
